@@ -9,7 +9,7 @@
 }
 .prompt-icon, .success-icon { font-size: 4rem; margin-bottom: 20px; }
 .checkout-login-prompt h2,
-.checkout-success h1 { font-size: 2rem; margin-bottom: 10px; color: var(--espresso); }
+.checkout-success h1 { font-size: 2rem; margin-bottom: 10px; color: var(--cocoa-dark); }
 .checkout-login-prompt p,
 .checkout-success p  { color: var(--muted); margin-bottom: 28px; }
 .prompt-btns, .success-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
@@ -24,7 +24,7 @@
 
 .section-label {
   font-size: 1.2rem;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-bottom: 16px;
 }
 
@@ -41,37 +41,37 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid var(--ivory);
+  border-bottom: 1px solid var(--vanilla);
   font-size: 0.95rem;
 }
 .checkout-item:last-of-type { border-bottom: none; }
 
-.checkout-item-name { color: var(--espresso); font-weight: 500; }
+.checkout-item-name { color: var(--cocoa-dark); font-weight: 500; }
 .checkout-qty       { color: var(--muted); font-weight: 400; font-size: 0.85rem; }
-.checkout-item-price { font-weight: 700; color: var(--espresso); }
+.checkout-item-price { font-weight: 700; color: var(--cocoa-dark); }
 
 .notes-group { margin-top: 20px; }
 .notes-group label {
   display: block;
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--medium);
+  color: var(--chocolate);
   margin-bottom: 8px;
 }
 .notes-group textarea {
   width: 100%;
   padding: 12px 14px;
-  border: 2px solid var(--ivory);
+  border: 2px solid var(--vanilla);
   border-radius: var(--radius);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   resize: vertical;
   outline: none;
   transition: border-color 0.2s;
   background: var(--cream);
 }
-.notes-group textarea:focus { border-color: var(--caramel); }
+.notes-group textarea:focus { border-color: var(--milk-choc); }
 
 /* Summary */
 .checkout-summary {
@@ -86,19 +86,19 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.95rem;
-  color: var(--medium);
+  color: var(--chocolate);
   margin-bottom: 12px;
 }
 .checkout-total-row.grand {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-top: 4px;
 }
 
 .checkout-divider {
   height: 1px;
-  background: var(--ivory);
+  background: var(--vanilla);
   margin: 12px 0 16px;
 }
 

@@ -27,8 +27,8 @@ export default function Navbar() {
       <div className="container navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <span className="logo-icon">☕</span>
-          <span className="logo-text">Coffee<em>_Bite</em></span>
+          <span className="logo-icon">🍫</span>
+          <span className="logo-text">Choco<em>_Bite</em></span>
         </Link>
 
         {/* Desktop links */}

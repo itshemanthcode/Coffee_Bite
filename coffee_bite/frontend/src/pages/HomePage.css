@@ -11,8 +11,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 80% at 70% 50%, rgba(196,98,45,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 60% at 20% 80%, rgba(212,168,90,0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 80% at 70% 50%, rgba(210,105,30,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 20% 80%, rgba(139,69,19,0.1) 0%, transparent 50%),
     var(--cream);
 }
 
@@ -28,24 +28,24 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--caramel);
+  color: var(--milk-choc);
   margin-bottom: 20px;
 }
 
 .hero-title {
   font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-bottom: 24px;
   line-height: 1.05;
 }
 .hero-title em {
   font-style: italic;
-  color: var(--caramel);
+  color: var(--milk-choc);
 }
 
 .hero-desc {
   font-size: 1.15rem;
-  color: var(--medium);
+  color: var(--chocolate);
   margin-bottom: 36px;
   max-width: 440px;
 }
@@ -84,9 +84,9 @@
 .cat-tab {
   padding: 10px 22px;
   border-radius: 50px;
-  border: 2px solid var(--ivory);
+  border: 2px solid var(--vanilla);
   background: var(--white);
-  color: var(--medium);
+  color: var(--chocolate);
   font-size: 0.9rem;
   font-weight: 600;
   font-family: 'DM Sans', sans-serif;
@@ -96,10 +96,10 @@
   align-items: center;
   gap: 6px;
 }
-.cat-tab:hover  { border-color: var(--caramel); color: var(--caramel); }
+.cat-tab:hover  { border-color: var(--milk-choc); color: var(--milk-choc); }
 .cat-tab.active {
-  background: var(--caramel);
-  border-color: var(--caramel);
+  background: var(--milk-choc);
+  border-color: var(--milk-choc);
   color: white;
 }
 
@@ -113,7 +113,7 @@
 .product-card {
   background: var(--white);
   border-radius: 20px;
-  box-shadow: 0 2px 16px rgba(26,15,8,0.08);
+  box-shadow: 0 2px 16px rgba(44,24,16,0.08);
   overflow: hidden;
   transition: transform 0.25s, box-shadow 0.25s;
   display: flex;
@@ -121,11 +121,11 @@
 }
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 36px rgba(26,15,8,0.14);
+  box-shadow: 0 12px 36px rgba(44,24,16,0.14);
 }
 
 .product-emoji {
-  background: linear-gradient(135deg, var(--ivory), #f0e2cc);
+  background: linear-gradient(135deg, var(--vanilla), #eedcc8);
   font-size: 3.5rem;
   text-align: center;
   padding: 32px 20px;
@@ -139,13 +139,13 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--caramel);
+  color: var(--milk-choc);
   margin-bottom: 6px;
 }
 
 .product-name {
   font-size: 1.2rem;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-bottom: 8px;
 }
 
@@ -166,7 +166,7 @@
 .product-price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   font-family: 'Playfair Display', serif;
 }
 

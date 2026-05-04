@@ -3,27 +3,30 @@ import { useCart } from '../context/CartContext';
 import './HomePage.css';
 
 const CATEGORY_ICONS = {
-  Coffee:    '☕',
-  Specialty: '🍵',
-  Pastry:    '🥐',
-  Food:      '🥑',
+  'Dark Chocolate':    '🍫',
+  'Milk Chocolate':    '🥛',
+  'White Chocolate':   '🤍',
+  'Truffles':          '🟤',
+  'Hot Chocolate':     '☕',
+  'Chocolate Desserts':'🍰',
+  'Gift Boxes':        '🎁',
 };
 
 const PRODUCT_EMOJIS = {
-  'Espresso':          '☕',
-  'Cappuccino':        '☕',
-  'Latte':             '🥛',
-  'Americano':         '☕',
-  'Cold Brew':         '🧊',
-  'Mocha':             '🍫',
-  'Caramel Macchiato': '🍯',
-  'Matcha Latte':      '🍵',
-  'Chai Latte':        '🍵',
-  'Croissant':         '🥐',
-  'Blueberry Muffin':  '🫐',
-  'Cinnamon Roll':     '🌀',
-  'Avocado Toast':     '🥑',
-  'Club Sandwich':     '🥪',
+  'Dark Truffle':              '🟤',
+  'Milk Chocolate Bar':        '🍫',
+  'White Chocolate Mousse':    '🤍',
+  'Hazelnut Praline':          '🌰',
+  'Salted Caramel Bonbon':     '🍬',
+  'Hot Dark Chocolate':        '☕',
+  'Belgian Waffle & Chocolate':'🧇',
+  'Chocolate Lava Cake':       '🍰',
+  'Cocoa Brownie':             '🟫',
+  'Chocolate Croissant':       '🥐',
+  'Mint Chocolate Chip':       '🌿',
+  'Raspberry Ganache':         '🫐',
+  'Pistachio Bark':            '💚',
+  'Espresso Chocolate':        '☕',
 };
 
 export default function HomePage() {
@@ -62,17 +65,17 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="container hero-content">
-          <p className="hero-eyebrow">Artisan Coffee & More</p>
+          <p className="hero-eyebrow">Artisan Chocolate & More</p>
           <h1 className="hero-title">
             Crafted with<br/>
-            <em>passion</em> &amp; beans.
+            <em>cocoa</em> &amp; love.
           </h1>
           <p className="hero-desc">
-            Every cup tells a story. Order your favourites and pick up fresh.
+            Every bite tells a story. Indulge in our handcrafted chocolates made from the finest beans.
           </p>
           <a href="#menu" className="btn btn-primary">Explore Menu ↓</a>
         </div>
-        <div className="hero-deco">☕</div>
+        <div className="hero-deco">🍫</div>
       </section>
 
       {/* Menu */}
@@ -80,7 +83,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header">
             <h2 className="page-title">Our Menu</h2>
-            <p className="page-subtitle">Fresh, crafted, and ready for you.</p>
+            <p className="page-subtitle">Handcrafted, indulgent, and ready for you.</p>
           </div>
 
           {/* Category tabs */}
@@ -91,7 +94,7 @@ export default function HomePage() {
                 className={`cat-tab ${category === cat ? 'active' : ''}`}
                 onClick={() => setCategory(cat)}
               >
-                {CATEGORY_ICONS[cat] || '🍽'} {cat}
+                {CATEGORY_ICONS[cat] || '🍫'} {cat}
               </button>
             ))}
           </div>
@@ -103,7 +106,7 @@ export default function HomePage() {
               {filtered.map(product => (
                 <div key={product.id} className="product-card">
                   <div className="product-emoji">
-                    {PRODUCT_EMOJIS[product.name] || '☕'}
+                    {PRODUCT_EMOJIS[product.name] || '🍫'}
                   </div>
                   <div className="product-info">
                     <div className="product-category">{product.category}</div>

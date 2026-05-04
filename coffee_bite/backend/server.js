@@ -17,7 +17,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/orders',   orderRoutes);
 
 // Health check
-app.get('/api/health', (_, res) => res.json({ status: 'Coffee_Bite API is running ☕' }));
+app.get('/api/health', (_, res) => res.json({ status: 'Choco_Bite API is running 🍫' }));
 
 // 404 handler
 app.use((req, res) => res.status(404).json({ error: 'Route not found' }));
@@ -29,4 +29,4 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`☕ Coffee_Bite server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`🍫 Choco_Bite server running on http://localhost:${PORT}`));

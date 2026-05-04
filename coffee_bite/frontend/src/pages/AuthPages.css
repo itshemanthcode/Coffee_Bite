@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 100px 20px 60px;
   background:
-    radial-gradient(ellipse 60% 60% at 80% 20%, rgba(196,98,45,0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 60% at 80% 20%, rgba(210,105,30,0.1) 0%, transparent 50%),
     var(--cream);
 }
 
@@ -19,14 +19,14 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-bottom: 28px;
 }
-.auth-brand em { color: var(--caramel); font-style: normal; }
+.auth-brand em { color: var(--milk-choc); font-style: normal; }
 
 .auth-title {
   font-size: 2rem;
-  color: var(--espresso);
+  color: var(--cocoa-dark);
   margin-bottom: 6px;
 }
 
@@ -50,7 +50,7 @@
   color: var(--muted);
 }
 .auth-switch a {
-  color: var(--caramel);
+  color: var(--milk-choc);
   font-weight: 600;
 }
 .auth-switch a:hover { text-decoration: underline; }

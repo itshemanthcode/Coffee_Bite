@@ -29,7 +29,7 @@ export default function CartPage() {
           <div className="cart-items">
             {items.map(item => (
               <div key={item.id} className="cart-item card">
-                <div className="cart-item-emoji">{item.name[0] === 'E' ? '☕' : '🍽'}</div>
+                <div className="cart-item-emoji">🍫</div>
                 <div className="cart-item-info">
                   <h3>{item.name}</h3>
                   <p className="cart-item-price">₹{parseFloat(item.price).toFixed(2)} each</p>

@@ -1,4 +1,4 @@
--- Coffee_Bite Database Schema
+-- Choco_Bite Database Schema
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
@@ -39,17 +39,17 @@ CREATE TABLE order_items (
 
 -- Seed Products
 INSERT INTO products (name, description, price, category) VALUES
-('Espresso',        'Rich, bold single shot of pure coffee',           2.50, 'Coffee'),
-('Cappuccino',      'Espresso with velvety steamed milk foam',          4.00, 'Coffee'),
-('Latte',           'Smooth espresso with creamy steamed milk',         4.50, 'Coffee'),
-('Americano',       'Espresso diluted with hot water, clean & strong',  3.00, 'Coffee'),
-('Cold Brew',       'Slow-steeped 18hr cold coffee, silky smooth',      4.50, 'Coffee'),
-('Mocha',           'Espresso blended with rich chocolate sauce',       5.00, 'Coffee'),
-('Caramel Macchiato','Vanilla latte with caramel drizzle',              5.50, 'Coffee'),
-('Matcha Latte',    'Ceremonial grade matcha with steamed oat milk',    5.00, 'Specialty'),
-('Chai Latte',      'Spiced chai tea with warm steamed milk',           4.50, 'Specialty'),
-('Croissant',       'Buttery, flaky French pastry baked fresh daily',   3.50, 'Pastry'),
-('Blueberry Muffin','Bursting with blueberries, baked each morning',    3.00, 'Pastry'),
-('Cinnamon Roll',   'Soft rolled pastry with cream cheese glaze',       4.00, 'Pastry'),
-('Avocado Toast',   'Smashed avo on sourdough with chilli flakes',      7.50, 'Food'),
-('Club Sandwich',   'Triple-decker with chicken, bacon & fresh greens', 8.50, 'Food');
+('Dark Truffle',              'Silky 72% single-origin dark chocolate truffle',                    3.50, 'Dark Chocolate'),
+('Milk Chocolate Bar',        'Creamy Swiss-style milk chocolate, smooth & velvety',               4.00, 'Milk Chocolate'),
+('White Chocolate Mousse',    'Airy white chocolate mousse with vanilla bean',                     5.00, 'White Chocolate'),
+('Hazelnut Praline',          'Crunchy roasted hazelnut enrobed in milk chocolate',                4.50, 'Truffles'),
+('Salted Caramel Bonbon',     'Rich caramel center with Himalayan pink salt finish',               4.00, 'Truffles'),
+('Hot Dark Chocolate',        'Intense Belgian dark cocoa, served piping hot',                     5.50, 'Hot Chocolate'),
+('Belgian Waffle & Chocolate','Warm Belgian waffle drizzled with dark & white chocolate',          7.50, 'Chocolate Desserts'),
+('Chocolate Lava Cake',       'Warm molten chocolate center with a crisp outer shell',             8.00, 'Chocolate Desserts'),
+('Cocoa Brownie',             'Dense fudgy brownie loaded with dark chocolate chunks',             5.00, 'Chocolate Desserts'),
+('Chocolate Croissant',       'Buttery, flaky croissant filled with dark chocolate',               4.50, 'Chocolate Desserts'),
+('Mint Chocolate Chip',       'Cool peppermint ganache in dark chocolate shell',                   3.50, 'Truffles'),
+('Raspberry Ganache',         'Tangy raspberry puree swirled into bittersweet ganache',            4.00, 'Truffles'),
+('Pistachio Bark',            'White chocolate bark studded with pistachios & cranberries',        6.00, 'White Chocolate'),
+('Espresso Chocolate',        'Dark chocolate infused with freshly ground espresso beans',         4.50, 'Dark Chocolate');

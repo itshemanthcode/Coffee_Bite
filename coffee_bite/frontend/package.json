@@ -1,5 +1,6 @@
 {
-  "name": "coffee-bite-frontend",
+  "name": "choco-bite-frontend",
+  "homepage": "https://itshemanthcode.github.io/Coffee_Bite",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -14,7 +15,18 @@
   },
   "proxy": "http://localhost:5000",
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

@@ -13,7 +13,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Navbar />
           <Routes>
             <Route path="/"        element={<HomePage />} />

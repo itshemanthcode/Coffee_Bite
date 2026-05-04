@@ -1,7 +1,7 @@
 {
-  "name": "coffee-bite-backend",
+  "name": "choco-bite-backend",
   "version": "1.0.0",
-  "description": "Coffee_Bite REST API - Node.js + Express + PostgreSQL",
+  "description": "Choco_Bite REST API - Node.js + Express + PostgreSQL",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -36,7 +36,7 @@ export default function LoginPage() {
   return (
     <div className="auth-page page">
       <div className="auth-card card">
-        <div className="auth-brand">☕ Coffee<em>_Bite</em></div>
+        <div className="auth-brand">🍫 Choco<em>_Bite</em></div>
         <h1 className="auth-title">Welcome back</h1>
         <p className="auth-sub">Sign in to your account to continue.</p>
 

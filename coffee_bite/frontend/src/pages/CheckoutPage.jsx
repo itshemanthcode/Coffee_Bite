@@ -48,7 +48,7 @@ export default function CheckoutPage() {
         <div className="container checkout-success">
           <div className="success-icon">✅</div>
           <h1>Order Placed!</h1>
-          <p>Your order has been received and is being prepared. ☕</p>
+          <p>Your order has been received and is being prepared. 🍫</p>
           <div className="success-btns">
             <Link to="/orders" className="btn btn-primary">View My Orders</Link>
             <Link to="/"       className="btn btn-outline">Order More</Link>
@@ -105,7 +105,7 @@ export default function CheckoutPage() {
               <label>Special instructions (optional)</label>
               <textarea
                 rows={3}
-                placeholder="E.g. extra shot, oat milk, no sugar…"
+                placeholder="E.g. gift wrapping, no nuts, extra dark…"
                 value={notes}
                 onChange={e => setNotes(e.target.value)}
               />
@@ -136,7 +136,7 @@ export default function CheckoutPage() {
               onClick={handlePlaceOrder}
               disabled={loading}
             >
-              {loading ? 'Placing order…' : '☕ Place Order'}
+              {loading ? 'Placing order…' : '🍫 Place Order'}
             </button>
 
             <Link to="/cart" className="btn btn-outline back-btn">← Back to Cart</Link>

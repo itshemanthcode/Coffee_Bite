@@ -39,9 +39,9 @@ export default function SignupPage() {
   return (
     <div className="auth-page page">
       <div className="auth-card card">
-        <div className="auth-brand">☕ Coffee<em>_Bite</em></div>
+        <div className="auth-brand">🍫 Choco<em>_Bite</em></div>
         <h1 className="auth-title">Create account</h1>
-        <p className="auth-sub">Join us and start ordering your favourites.</p>
+        <p className="auth-sub">Join us and indulge in our finest chocolates.</p>
 
         {error && <div className="error-box">{error}</div>}
 
