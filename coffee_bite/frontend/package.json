@@ -1,6 +1,5 @@
 {
   "name": "choco-bite-frontend",
-  "homepage": "https://itshemanthcode.github.io/Coffee_Bite",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
