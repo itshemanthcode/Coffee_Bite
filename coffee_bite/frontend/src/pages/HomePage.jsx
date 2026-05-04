@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
+import { API_URL } from '../config';
 import './HomePage.css';
 
 const CATEGORY_ICONS = {
@@ -29,8 +30,6 @@ const PRODUCT_EMOJIS = {
   'Espresso Chocolate':        '☕',
 };
 
-import { API_URL } from '../config';
-
 export default function HomePage() {
   const [products,  setProducts]  = useState([]);
   const [category,  setCategory]  = useState('All');
@@ -43,8 +42,9 @@ export default function HomePage() {
     fetch(`${API_URL}/api/products`)
       .then(r => r.json())
       .then(data => {
-        setProducts(data);
-        const cats = ['All', ...new Set(data.map(p => p.category))];
+        const list = Array.isArray(data) ? data : [];
+        setProducts(list);
+        const cats = ['All', ...new Set(list.map(p => p.category))];
         setCategories(cats);
         setLoading(false);
       })
