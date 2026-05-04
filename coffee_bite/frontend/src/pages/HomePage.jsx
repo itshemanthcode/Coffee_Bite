@@ -29,6 +29,8 @@ const PRODUCT_EMOJIS = {
   'Espresso Chocolate':        '☕',
 };
 
+import { API_URL } from '../config';
+
 export default function HomePage() {
   const [products,  setProducts]  = useState([]);
   const [category,  setCategory]  = useState('All');
@@ -38,7 +40,7 @@ export default function HomePage() {
   const { addItem } = useCart();
 
   useEffect(() => {
-    fetch('/api/products')
+    fetch(`${API_URL}/api/products`)
       .then(r => r.json())
       .then(data => {
         setProducts(data);

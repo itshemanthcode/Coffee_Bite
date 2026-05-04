@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useCart }  from '../context/CartContext';
 import { useAuth }  from '../context/AuthContext';
+import { API_URL } from '../config';
 import './CheckoutPage.css';
 
 export default function CheckoutPage() {
@@ -66,7 +67,7 @@ export default function CheckoutPage() {
         items: items.map(i => ({ product_id: i.id, quantity: i.quantity, price: i.price })),
         notes,
       };
-      const res  = await fetch('/api/orders', {
+      const res  = await fetch(`${API_URL}/api/orders`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

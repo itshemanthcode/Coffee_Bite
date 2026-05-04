@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { API_URL } from '../config';
 import './OrdersPage.css';
 
 export default function OrdersPage() {
@@ -11,7 +12,7 @@ export default function OrdersPage() {
 
   useEffect(() => {
     if (!isLoggedIn) return;
-    fetch('/api/orders/my', { headers: { Authorization: `Bearer ${token}` } })
+    fetch(`${API_URL}/api/orders/my`, { headers: { Authorization: `Bearer ${token}` } })
       .then(r => r.json())
       .then(data => { setOrders(data); setLoading(false); })
       .catch(() => { setError('Failed to load orders.'); setLoading(false); });

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { API_URL } from '../config';
 import './AuthPages.css';
 
 export default function SignupPage() {
@@ -20,7 +21,7 @@ export default function SignupPage() {
 
     setLoading(true);
     try {
-      const res  = await fetch('/api/auth/register', {
+      const res  = await fetch(`${API_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: form.name, email: form.email, password: form.password }),
